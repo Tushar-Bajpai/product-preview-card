@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%); 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-container {
+  max-width: 700px; /* card width */
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+
+/* Left Image */
+.card-container .image {
+  flex: 1;
+}
+.card-container .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right Info Section */
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* distribute evenly */
+  gap: 20px; /* natural spacing */
+  padding: 24px;
+}
+
+/* Top Title */
+.title {
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+}
+
+/* Product Name */
+.product-name-title {
+  font-family: 'Fraunces', serif;
+  font-size: 28px;
+  color: hsl(212, 21%, 14%);
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 12px 0;
+}
+
+.product-name p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: hsl(228, 12%, 48%);
+}
+
+/* Price */
+.price {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.price h2 {
+  font-family: 'Fraunces', serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.price s {
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+}
+
+/* Button */
+button {
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  padding: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: hsl(158, 36%, 25%);
+}
